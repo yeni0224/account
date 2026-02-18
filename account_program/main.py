@@ -1,6 +1,4 @@
-from account_program.functions import *
-
-#카테고리 이름을 변수화
+from functions import *
 
 def main():
     menu = {
@@ -10,6 +8,7 @@ def main():
         '4' : delete_data,
         '5' : sum_monthly,
         '6' : sum_category,
+        '7' : search_category,
         '0' : quit_program
     }
 
@@ -20,7 +19,8 @@ def main():
         print('3. 금액 /메모 수정')
         print('4. 내역 삭제')
         print('5. 월별 지출 합계')
-        print('6. 카테고리별 지출 통계')
+        print('6. 카테고리별 지출 합계')
+        print('7. 카테고리별 내역 조회')
         print('0. 프로그램 종료')
 
         choice = input('작업할 항목의 번호를 입력하시오 : ')
